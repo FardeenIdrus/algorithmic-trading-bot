@@ -31,7 +31,7 @@ def download_stock_data(ticker, start_date, end_date):
         # > 0 Returns True if the count is greater than 0
         #.fillna(method='ffill') Fills missing values with the previous value
         if data.isnull().sum().sum() > 0:
-            print(f"Warning:FOund {data.isnull().sum().sum()} missing values. Filling Forward.")
+            print(f"Warning:Found {data.isnull().sum().sum()} missing values. Filling Forward.")
             data = data.fillna(method='ffill')
         
         print(f"Donwloaded {len(data)} days of data for {ticker}")
