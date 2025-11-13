@@ -79,4 +79,4 @@ def calculate_win_rate(returns):
     
     return win_rate
         
-    ß
+    
